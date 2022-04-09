@@ -6,12 +6,16 @@
 }
 
 .container{
+
     display: grid;
     grid-template-columns: 1fr 7fr;
     grid-template-rows: 300px 994px
 }
 
 .header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 150px 150px;
     background-color: #FFFFFF;
     grid-column-start: 2;
     grid-column-end: 4;
@@ -45,11 +49,11 @@ li{
 
 img{
     padding-right: 20px;
-    height: 30px;
+    height: 32px;
 }
 
 h1{
-    font-size: 35px;
+    font-size: 28px;
 }
 
 
@@ -57,4 +61,100 @@ li:hover{
     text-decoration: underline;
     cursor: pointer;
 
+}
+
+input{
+    background-color: #E2E8F0;
+    width: 800px;
+    height: 35px;
+    border-radius: 20px;
+    border: dashed 1px #fff;
+
+}
+
+.search-bar > img {
+    padding-top: 5px;
+    height: 40px;
+
+}
+
+.search-bar{
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+
+.user-name {
+align-items: center;    
+    display:flex;
+    padding: 20px;
+}
+
+.header-buttons{
+display:flex;
+align-items: center;
+justify-content: start;
+padding-right: 40px;
+}
+
+.header-buttons > button {
+    height:50px;
+    width: 200px;
+    color: #FFFFFF;
+    background-color: #1992D4;
+    border-radius: 30px;
+    margin: 20px;
+    border:none;
+    font-size: 18px;
+}
+
+.header-buttons > button:hover{
+    color: #000;
+
+}
+
+.outer-container{
+    background-color: #000;
+    display:flex;
+    justify-content: center;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.profile > img { 
+    margin-right: 40px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color:#FACC15;
+}
+
+.profile-text > h1{
+    font-size: 42px;
+}
+
+.profile-img{
+    border-radius: 50%;
+    background-color: #FACC15;
+    height: 60px;
+    width:60px;
+    margin-right: 40px;
+}
+
+.profile-icon{
+    height:40px;
+    margin-right:  20px;
+}
+
+.user-name > h2{
+    font-size: 32px;
+    font-weight: bold;
 }
